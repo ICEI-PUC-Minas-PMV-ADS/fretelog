@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel = "stylesheet" href="Login.css">
+</head>
+<body>
+
+    <img src="./logo.png" alt="logoFretelog">
+   
+    <form>
+        
+        <label><strong>Login</strong></label>
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="password" id="senha" placeholder="Senha">
+        <div id="erro">Credenciais inválidas</div>
+        <button id="Loginbtn" onclick="login(); return false">Login</button>
+        <p><a href="recSenha.html">Recuperar senha</a></p>
+    </form>
+</body>
+
+<script src="Login.js"></script>
+</html>

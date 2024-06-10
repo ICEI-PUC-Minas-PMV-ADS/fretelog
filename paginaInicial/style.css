@@ -1,0 +1,296 @@
+/* Suporte */
+
+.oculto {
+    display: none;
+    
+}
+
+.icon {
+    cursor: pointer;
+}
+
+#circulo {
+    position: fixed;
+    width: 80px;
+    height: 80px; 
+    background-color: #123BCC; 
+    border-radius: 50%;
+    margin-left: 90%;
+    margin-top: 6%;
+}
+
+#rosto {
+    position: fixed;
+    width: 70px;
+    height: 51px;
+    background-color: #C0C0C0; 
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-left: 90.3%;
+}
+
+#olho1 {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: white; 
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-top: 7.8%;
+    margin-left: 90.8%;
+}
+
+#olho2 {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: white; 
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-top: 7.8%;
+    margin-left: 92.6%;
+}
+
+#aba {
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    width: 400px;
+    height: 500px;
+    border: 2px solid #123BCC;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.visivel {
+    display: flex;
+    flex-direction: column;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123BCC;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#abaSuporte {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#opcoes button {
+    background-color: #123BCC;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+#opcoes button:hover {
+    background-color: #0d2a8e;
+}
+
+
+.sent-message, .received-message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.sent-message {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.received-message {
+    background-color: #FFFFFF;
+    align-self: flex-start;
+}
+
+
+/* Textos */
+.texto{
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+#bemVindo {
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 2%;
+    line-height: 1.2;
+    font-family: Arial;
+    font-weight: 545;
+    font-size: 30px;
+}
+#info{
+    font-family: Arial;
+    line-height: 1.2;
+    font-size: 17px;
+    margin-left: 7% ;
+}
+/* BOTÃO */
+.botao{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+#cadastro{
+    button{
+        position: absolute;
+        background-color: #123BCC ;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 100px;
+        font-weight: 400;
+        padding: 6px;
+        margin-top: 4px;
+        margin-left: 3px;
+        margin-bottom: 4px;
+    }
+}
+#login{
+    button{
+        position: absolute;
+        background-color: #aabfc6;
+        color:blue;
+        font-size: 20px;
+        border: none;
+        font-weight: 400;
+        padding: 10px;
+        padding-left: 130px;
+        border-radius: 100px;
+    }
+}
+/* Imagem */
+#imgBV img{
+    position:absolute;
+    top: 30px; 
+    left: 800px;
+    height:600px;
+    display: flex;
+}
+#logo-container img {
+    height: 120px;
+    display: inline-block;
+    padding-left: 40px;
+}
+#barra-azul {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #123BCC;
+  }
+
+/* Cor */
+.azul {
+    color: #123BCC;
+    font-weight:550; 
+}
+.branco {
+    color: white;
+}
+.azul1 {
+    color: blue;
+}
+/* Responsividade */
+@media (min-width:321px) and (max-width:760px){
+    body{
+        #imgBV{
+            display: none;
+        }
+        #logo-container{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+@media (max-width:320px){
+    body{
+        #imgBV{
+            display: none;
+        }
+        #logo-container{
+            width: 100px;
+            height: 100px;
+        }
+        #barra-azul{
+            display: none;
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1000px){
+    body{
+        #imgBV{
+            display: none;
+        }
+        #bemVindo {
+            font-size: 40px;
+        }
+        #info{
+            font-size: 30px; 
+        }
+        .botao{
+            position: absolute;
+            top: 750px;
+        }
+    }   
+}
+@media (min-width:1200px) and (max-width:1290px){
+    body{
+        #bemVindo{
+            font-size: 35px;
+        }
+        #info{
+            font-size: 24px;
+        }
+        .texto{
+            margin-top: 10px;
+        }
+        #imgBV img{
+        position:absolute;
+        top: 20px; 
+        left: 700px;
+        height:700px;
+        }
+    }
+}
+@media (min-width:1300px) and (max-width:1400px){
+    body{
+        .texto{
+            margin-top: 10px;
+        }
+        #imgBV img{
+        position:absolute;
+        top: 20px; 
+        left: 700px;
+        height:550px;
+        }
+    }
+}

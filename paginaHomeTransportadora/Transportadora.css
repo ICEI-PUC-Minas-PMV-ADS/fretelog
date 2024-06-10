@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+img{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    background-color: lightgreen;
+}
+
+div{
+    background-color: lightgray;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#dados{
+    width: 1082px;
+    height: 154px;
+    top: 47px;
+    left: 280px;
+    gap: 0px;
+    opacity: 0px;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#cabecalho{
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+label{
+    display: block;
+    padding-left: 15px;
+    background-color: aqua;
+}
+
+span{
+    background-color: white;
+    display: inline-block;
+    width: 262px;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+#Editar{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+}
+
+#lucro{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 632px;
+    height: 282px;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+#motoristas{
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 578px;
+    height: 400px;
+}
+
+    
+
+
+#viagens{margin-top: 0px;
+    width: 632px;
+    height: 282px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#motorista{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    display: block;
+}

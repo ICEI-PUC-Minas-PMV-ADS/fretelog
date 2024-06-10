@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=2.5">
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Novo usuário</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="header">
+            <h2>Cadastro</h2>
+        </section>
+
+        <form id="form" class="form">
+            <div class="form-content"> 
+                <label for="usertype"> Tipo de usuário</label>
+                <select id="usertype"name="opcoes">
+                    <option value="Motorista">Motorista</option>
+                    <option value="Transportador">Transportador</option>
+                  </select>
+            </div>
+            <div class="form-content">
+                <label for="username">Nome do usuário</label>
+                <input Type="text" id="username" placeholder="Digite o nome do usuário" />
+                <a>mensagem de erro</a>
+            </div>
+
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input Type="email" id="email" placeholder="Digite o seu email" />
+                <a>mensagem de erro</a>
+            </div>
+
+            <div class="form-content">
+                <label for="tel">Celular</label>
+                <input Type="tel" id="tel" placeholder="(xx) xxxxx-xxxx" />
+                <a>mensagem de erro</a>
+            </div>
+
+            <div class="form-content">
+                <label for="password">Senha</label>
+                <input Type="password" id="password" placeholder="Digite sua senha" />
+                <a>mensagem de erro</a>
+            </div>
+
+            <div class="form-content">
+                <label for="password-confirmation">Confirmação de senha</label>
+                <input Type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
+                <a>mensagem de erro</a>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+        <a href="../paginaInicial/index.html">Retornar à página inicial</a>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
