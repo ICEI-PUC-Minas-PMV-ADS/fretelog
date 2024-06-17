@@ -13,10 +13,11 @@
     <header class="header">
         <img src="./logo.png" alt="Logo Frete Log" class="logo">
         <div id="dados">
-            <label><STrong>DADOS</STrong></label>
-            <span>Nome</span>
-            <span>E-mail</span>
-            <a class="edit-profile-btn" href="#">Editar perfil</a>
+            <label><STrong>Dados</STrong></label>
+            <span id="nomeUsuario"></span>
+            <span id="emailUsuario"></span>
+        <a class="edit-profile-btn" href="../editarPerfil/index.html">Editar perfil</a> 
+        <a class="logout-btn" onclick="logout()">Sair</a>
     </header>
 
     <div class="card-container">
@@ -44,7 +45,7 @@
                 <input type="text" placeholder="Digite o nome ou CNPJ da transportadora">
                 <button>Pesquisar</button>
             </div>
-            <div class="card-content"> <!-- Resultados da pesquisa aqui -->
+            <div class="card-content">
             </div>
         </div>
     </div>

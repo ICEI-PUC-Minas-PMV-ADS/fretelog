@@ -124,15 +124,17 @@ function checkForm() {
     });
 
     if (isValid) {
-        // Salva os dados do usuário no localStorage
-        var usuario = { 
+        // Salva os dados do usuário no localStorage sem usar uma chave única
+        var dadosUsuario = { 
             usertype: usertype.value,
             nome: username.value,
             email: email.value,
             tel: tel.value,
             senha: password.value
         };
-        localStorage.setItem('usuario', JSON.stringify(usuario));
+        
+        // Substitua 'uniqueKey' por uma chave fixa, como 'dadosUsuario'
+        localStorage.setItem('dadosUsuario', JSON.stringify(dadosUsuario));
         
         alert("CADASTRADO COM SUCESSO!");
     
@@ -142,7 +144,6 @@ function checkForm() {
         tel.value = '';
         password.value = '';
         passwordConfirmation.value = '';
-
     }
 
 }

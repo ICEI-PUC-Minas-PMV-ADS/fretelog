@@ -1,24 +1,26 @@
-function login(){
-        
+function login() {
     let Email = document.getElementById("email").value;
     let Senha = document.getElementById("senha").value;
     let msgErro = document.getElementById("erro");
-    let dadosUsuario = []
     let validaLogin = false;
     
-    dadosUsuario = JSON.parse(localStorage.getItem('dadosUsuario'))
-
-    if(Email == dadosUsuario.email && Senha == dadosUsuario.senha){
-            validaLogin = true;
-           
-    }else{
-            validaLogin = false;
+    // Obtém os dados do usuário do localStorage
+    let dadosUsuario = JSON.parse(localStorage.getItem('dadosUsuario'));
+    
+    // Verifica se o email e a senha correspondem aos dados salvos
+    if (dadosUsuario && Email == dadosUsuario.email && Senha == dadosUsuario.senha) {
+        validaLogin = true;
     }
-
-    if(validaLogin == true){
-            window.location.href = "Transportadora.html"
-    }else{
-            msgErro.setAttribute('style', 'display: block')
+    
+        if (validaLogin) {
+            if (dadosUsuario.usertype == "Motorista") {
+                window.location.href = "../paginaHomeMotorista/home1.html";
+            } else if (dadosUsuario.usertype == "Transportador") {
+                window.location.href = "../paginaHomeTransportadora/index.html";
+            }
+        } else {
+            msgErro.setAttribute('style', 'display: block');
+        }
     }
 
     /*for(let i in dadosUsuario){
@@ -35,8 +37,6 @@ function login(){
     }else{
             alert('Deu ruim')
     }*/
-
-}
 
 /*dadosUsuario.forEach(item=> {
     if (usuario == item.email && Senha == item.senha) {

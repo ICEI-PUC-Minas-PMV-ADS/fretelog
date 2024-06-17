@@ -23,7 +23,7 @@ body {
     max-width: 600px;
     width: 100%;
     box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    overflow: hidden; 
 
 }
 
@@ -89,6 +89,12 @@ body {
 .form select{
     display: inline-block;
     margin-bottom: 4px;
+} 
 
+#logo {
+    position: absolute;
+    left: 10px; 
+    top: 100px; 
+    display: flex;
 
-}
+} 
