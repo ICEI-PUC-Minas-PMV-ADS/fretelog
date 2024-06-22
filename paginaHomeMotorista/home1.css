@@ -1,120 +1,79 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Verdana', sans-serif;
-    background-color: #f4f4f4;
+  font-family: verdana; /* define o estilo da fonte*/
+  background-color: #f0f8ff; /* Cor de fundo em tom de branco azulado */
+  color: #333; /* Cor do texto */
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 80px;
+  background-color: #e6f2ff; /* Cor de fundo do cabeçalho em tom de azul claro */
+  padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+  display: flex; /* Usa flexbox para alinhar os itens do cabeçalho */
+  align-items: center; /* Alinha verticalmente os itens do cabeçalho */
+  justify-content: space-between; /* Distribui o espaço entre os itens do cabeçalho */ 
+  height: 100px; /* define a altura do cabeçalho */
 }
 
-.logo { 
-    height: 220px;
-}
-
-.edit-profile-btn,
-.logout-btn {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 16px; 
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 10px;
-    height: 100%;
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    flex: 1 1 calc(50% - 40px); 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    font-size: 18px;
-    text-align: center;
-}
-
-.scrollable {
-    max-height: 150px;
-    overflow-y: auto;
-}
-
-.filtro, .search-container, .card-content {
-    padding: 15px;
-}
-
-.filtro input[type="text"],
-.search-container input[type="text"],
-.filtro select {
-    width: 98%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.filtro button, .search-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.filtro-content {
-    display: none;
+.logo {
+  height: 220px; /* Altura do logo */
+  margin-right: 20px; /* Espaço à direita do logo */
 }
 
 #dados {
-    display: flex; 
-    align-items: center; 
-    flex: 1; 
-    padding: 10px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  }
+  display: flex; /* Usa flexbox para alinhar os elementos de dados do usuário */
+  align-items: center; /* Alinha verticalmente os elementos de dados do usuário */
+}
 
-  #dados h1 {
-    text-align: center; 
-    color: #007bff;
-  } 
+#dados label, #dados span {
+  margin-right: 10px; /* Espaço à direita dos elementos de dados do usuário */
+}
 
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-  }
+.edit-profile-btn, .logout-btn {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #1058d1; /* Cor do texto dos botões em tom de azul */
+  padding: 5px 10px; /* Espaçamento interno dos botões */
+  margin-left: 10px; /* Espaço à esquerda dos botões */
+  border: 1px solid #1058d1; /* Borda dos botões em tom de azul */
+  border-radius: 5px; /* Arredonda as bordas dos botões */
+  background-color: #fff; /* Cor de fundo dos botões em branco */
+}
+
+.edit-profile-btn:hover, .logout-btn:hover {
+  background-color: #1058d1; /* Cor de fundo dos botões ao passar o mouse em tom de azul */
+  color: #fff; /* Cor do texto dos botões ao passar o mouse em branco */
+}
+
+h2 {
+  text-align: center; /* Centraliza o título */
+  margin: 20px 0; /* Espaçamento acima e abaixo do título */
+  color: #1058d1; /* Cor do texto do título em tom de azul */
+}
+
+table {
+  width: 100%; /* Largura da tabela */
+  border-collapse: collapse; /* Remove o espaçamento entre as células */
+  margin-bottom: 20px; /* Espaçamento abaixo da tabela */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Borda das células da tabela */
+  padding: 8px; /* Espaçamento interno das células */
+  text-align: left; /* Alinhamento do texto das células à esquerda */
+}
+
+th {
+  background-color: #e6f2ff; /* Cor de fundo do cabeçalho da tabela em tom de azul claro */
+}
+
+footer {
+  background-color: #e6f2ff; /* Cor de fundo do rodapé em tom de azul claro */
+  padding: 10px 20px; /* Espaçamento interno do rodapé */
+  text-align: center; /* Centraliza o texto do rodapé */
+  margin-top: 20px; /* Espaçamento acima do rodapé */
+}

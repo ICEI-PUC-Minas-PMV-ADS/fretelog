@@ -1,28 +1,40 @@
-function login() {
-    let Email = document.getElementById("email").value;
-    let Senha = document.getElementById("senha").value;
-    let msgErro = document.getElementById("erro");
-    let validaLogin = false;
+// Salvar dados do usuário 'Admin' no localStorage com uma chave única
+var dadosUsuarioAdmin = {
+        email: 'admin@transportadora.com.br',
+        senha: '12345678'
+    };
     
-    // Obtém os dados do usuário do localStorage
-    let dadosUsuario = JSON.parse(localStorage.getItem('dadosUsuario'));
+    localStorage.setItem('dadosUsuarioAdmin', JSON.stringify(dadosUsuarioAdmin));
     
-    // Verifica se o email e a senha correspondem aos dados salvos
-    if (dadosUsuario && Email == dadosUsuario.email && Senha == dadosUsuario.senha) {
-        validaLogin = true;
-    }
-    
-        if (validaLogin) {
-            if (dadosUsuario.usertype == "Motorista") {
-                window.location.href = "../paginaHomeMotorista/home1.html";
-            } else if (dadosUsuario.usertype == "Transportador") {
-                window.location.href = "../paginaHomeTransportadora/index.html";
-            }
-        } else {
+    // Função de login modificada para verificar ambas as chaves
+    function login() {
+        let Email = document.getElementById("email").value;
+        let Senha = document.getElementById("senha").value;
+        let msgErro = document.getElementById("erro");
+        let validaLogin = false;
+        
+        // Obtém os dados do usuário 'Admin' do localStorage
+        let dadosAdmin = JSON.parse(localStorage.getItem('dadosUsuarioAdmin'));
+        // Obtém os dados de outros usuários do localStorage
+        let dadosUsuario = JSON.parse(localStorage.getItem('dadosUsuario'));
+        
+        // Verifica se o email e a senha correspondem aos dados salvos para 'Admin'
+        if (dadosAdmin && Email == dadosAdmin.email && Senha == dadosAdmin.senha) {
+            validaLogin = true;
+            // Redireciona o usuário 'Admin' para a página de transportadora
+            window.location.href = "../paginaHomeTransportadora/index.html";
+        } else if (dadosUsuario && Email == dadosUsuario.email && Senha == dadosUsuario.senha) {
+            // Verifica se o email e a senha correspondem aos dados salvos para outros usuários
+            validaLogin = true;
+            // Redireciona outros usuários para a página de motorista
+            window.location.href = "../paginaHomeMotorista/home1.html";
+        }
+        
+        if (!validaLogin) {
             msgErro.setAttribute('style', 'display: block');
+            msgErro.textContent = "Erro: E-mail ou senha inválidos!";
         }
     }
-
     /*for(let i in dadosUsuario){
             if(Email == dadosUsuario[i].email && Senha == dadosUsuario[i].senha){
                     validaLogin = true;

@@ -4,7 +4,6 @@ const email = document.getElementById("email");
 const tel = document.getElementById("tel");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
-const usertype = document.getElementById("usertype");
 
 
 form.addEventListener("submit", (event) => {
@@ -126,7 +125,6 @@ function checkForm() {
     if (isValid) {
         // Salva os dados do usuário no localStorage sem usar uma chave única
         var dadosUsuario = { 
-            usertype: usertype.value,
             nome: username.value,
             email: email.value,
             tel: tel.value,
