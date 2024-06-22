@@ -222,12 +222,35 @@
 /* Responsividade */
 @media (min-width:321px) and (max-width:760px){
     body{
+        /* Botãç */
+        .icon{
+            position: absolute;
+            top: 80%;
+            right: 110%;
+        }
+        #rosto{
+            margin-left: 90.7%;
+            margin-top: 8.9%;
+        }
+        #olho1{
+            margin-left: 91.7%;
+            margin-top: 11.5%;
+        }
+        #olho2{
+            margin-left: 98%;
+            margin-top: 11.5%;
+        }
+        /* Imagem */
         #imgBV{
             display: none;
         }
         #logo-container{
             width: 100px;
             height: 100px;
+        }
+        /* Paragrafos*/
+        #primeiro{
+            display: none;
         }
     }
 }
@@ -247,6 +270,19 @@
 }
 @media (min-width:768px) and (max-width:1000px){
     body{
+        .icon{
+            margin-top: 30%;
+        }
+        #rosto{
+            margin-top: 7.5%;
+        }
+        #olho1{
+            margin-top: 8.7%;
+        }
+        #olho2{
+            margin-top: 8.7%;
+            margin-left: 93%;
+        }
         #imgBV{
             display: none;
         }
@@ -259,6 +295,9 @@
         .botao{
             position: absolute;
             top: 750px;
+        }
+        #segundo{
+            display: none;
         }
     }   
 }
@@ -276,8 +315,11 @@
         #imgBV img{
         position:absolute;
         top: 20px; 
-        left: 700px;
+        left: 900px;
         height:700px;
+        }
+        #segundo{
+            display: none;
         }
     }
 }
@@ -291,6 +333,20 @@
         top: 20px; 
         left: 700px;
         height:550px;
+        }
+        .icon{
+            position: absolute;
+            top: 60%;
+        }
+        #rosto{
+            margin-top: 7.2%;
+        }
+        #olho1{
+            margin-top: 8.4%;
+        }
+        #olho2{
+            margin-top: 8.4%;
+            margin-left: 93%;
         }
     }
 }
