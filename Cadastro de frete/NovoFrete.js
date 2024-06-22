@@ -45,3 +45,7 @@ function Frete(){
     }
 
 }
+
+function logout(){
+    window.location.href = '../paginaLogin/index.html';
+}

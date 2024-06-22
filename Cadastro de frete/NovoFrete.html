@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="NovoFrete.css">
 </head>
 <body>
+
+    <header>
+        <img src="logo.png" alt="Logo Fretelog" id="Logo">
+        <div id="Dados">
+            <label><b>Seja bem vindo</b></label>
+            <span id="nomeUsuario">Admin</span>
+            <a id="logout" onclick="logout()">Sair</a>
+        </div>
+    </header>
     <form>
-        <label><strong>Nova viagem</strong></label>
+        <label id="Viagem"><strong>Nova viagem</strong></label>
         <input type="text"  id="Produto" placeholder="Produto">
         <input type="text"  id="Origem" placeholder="Origem">
         <input type="text"  id="Destino" placeholder="Destino">

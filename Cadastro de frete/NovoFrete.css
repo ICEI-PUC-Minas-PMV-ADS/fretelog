@@ -5,7 +5,23 @@
 }
 
 body{
+    font-family: verdana;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header{
     background-color: rgb(229, 245, 250);
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 100px; 
+}
+
+#Logo{
+    height: 230px; 
+    margin-right: 20px;
 }
 
 form{
@@ -15,7 +31,7 @@ form{
     background-color: rgb(247, 246, 246);
 }
 
-label{
+#Viagem{
     font-size: x-large;
     font-family: Verdana, sans-serif;
     color: white;
@@ -59,4 +75,15 @@ button{
     border-radius: 20px;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+#logout{
+    text-decoration: none;
+    color: #123BCC;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #123BCC;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
 }
