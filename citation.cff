@@ -1,12 +1,12 @@
 message: Please cite this software using these metadata.
 title:
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Luiz Souza de Almeida
+    given-names: Marlon
+  - family-names: de Moraes Freitas
+    given-names: Kayky
+  - family-names: de Souza Santos
+    given-names: Lucas
   - family-names: 
     given-names: 
   - family-names: 
@@ -19,11 +19,11 @@ authors:
     given-names: 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Felipe Alves de Oliveira
+    given-names: Pedro
 keywords:
-  - 
-  - 
-repository-code: 
+  - uberdofrete
+  - fretelog
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-fretelog
 version: 1.0.0
 date-released: 2023-10-31
