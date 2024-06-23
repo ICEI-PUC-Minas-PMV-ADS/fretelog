@@ -73,18 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
     renderizarTabela(fretes);
   });
    
-  window.selecionarFrete = function(checkbox) {
-    if (checkbox.checked) {
-        // Recupera os dados do usuário do localStorage
-        let dadosUsuario = JSON.parse(localStorage.getItem('dadosUsuario'));
-        
-        // Salva os dados do usuário em uma nova chave com o ID do frete escolhido
-        localStorage.setItem('dadosFrete_' + checkbox.value, JSON.stringify(dadosUsuario));
-        
-        // Oculta a linha da tabela correspondente ao frete selecionado
-        checkbox.closest('tr').style.display = 'none';
-        
-        alert('Coleta agendada! Favor aguardar contato da transportadora.');
-    }
+window.selecionarFrete = function(checkbox) {
+    // Carregar fretes do localStorage
+    let fretes = JSON.parse(localStorage.getItem('fretes'));
+    
+    // Encontrar o frete correspondente ao id da checkbox
+    let freteSelecionado = fretes.find(frete => frete.id === checkbox.value);
+    
+    // Salvar os dados do frete em uma nova chave com o ID do frete escolhido
+    localStorage.setItem('dadosFrete_' + checkbox.value, JSON.stringify(freteSelecionado));
+    
+    // Ocultar a linha da tabela correspondente ao frete selecionado
+    checkbox.closest('tr').style.display = 'none';
+    
+    alert('Coleta agendada! Favor aguardar contato da transportadora.');
 }
   
