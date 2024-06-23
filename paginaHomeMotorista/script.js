@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
         fretes.forEach(frete => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${frete.id}</td>
-                <td>${frete.origem}</td>
-                <td>${frete.destinatario}</td>
-                <td>${frete.tipoDeVeículo}</td>
-                <td>${frete.valor}</td>
-                <td>${frete.data}</td> 
+                <td>${frete.ID}</td>
+                <td>${frete.origemFrete}</td>
+                <td>${frete.destinoFrete}</td>
+                <td>${frete.veiculoFrete}</td>
+                <td>${frete.valorFrete}</td>
+                <td>${frete.dataFrete}</td> 
                 <td><input type="checkbox" name="select" value="${frete.id}" onclick="selecionarFrete(this)"></td>
             `;
             tbody.appendChild(row);
