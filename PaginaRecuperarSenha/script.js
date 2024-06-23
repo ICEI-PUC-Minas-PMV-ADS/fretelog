@@ -7,7 +7,7 @@ function recoverPassword() {
         // Verifica se dadosUsuario existe e contém o e-mail
         if(dadosUsuario && dadosUsuario.email === email) {
             document.getElementById('message').textContent = 'Um e-mail de recuperação foi enviado para ' + email;
-            // Aqui você colocaria o código para enviar o e-mail de recuperação
+            // Envia mensagem de recuperação para e-mail cadastrado
         } else {
             // Alerta o usuário se o e-mail não estiver cadastrado
             alert('O e-mail informado não está cadastrado.');

@@ -22,7 +22,7 @@ var dadosUsuarioAdmin = {
         if (dadosAdmin && Email == dadosAdmin.email && Senha == dadosAdmin.senha) {
             validaLogin = true;
             // Redireciona o usuário 'Admin' para a página de transportadora
-            window.location.href = "../paginaHomeTransportadora/index.html";
+            window.location.href = "../Cadastrodefrete/Novofrete.html";
         } else if (dadosUsuario && Email == dadosUsuario.email && Senha == dadosUsuario.senha) {
             // Verifica se o email e a senha correspondem aos dados salvos para outros usuários
             validaLogin = true;

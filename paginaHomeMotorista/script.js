@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Oculta a linha da tabela correspondente ao frete selecionado
         checkbox.closest('tr').style.display = 'none';
         
-        alert('Frete confirmado. Aguardar contato da transportadora.');
+        alert('Coleta agendada! Favor aguardar contato da transportadora.');
     }
 }
   

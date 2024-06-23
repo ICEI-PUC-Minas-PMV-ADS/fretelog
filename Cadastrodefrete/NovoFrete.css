@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header{
+    background-color: rgb(229, 245, 250);
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 100px; 
+}
+
+#Logo{
+    height: 230px; 
+    margin-right: 20px;
+}
+
+form{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+    background-color: rgb(247, 246, 246);
+}
+
+#Viagem{
+    font-size: x-large;
+    font-family: Verdana, sans-serif;
+    color: white;
+    background: linear-gradient(120deg, #3acbf0 0%, #123BCC 100%);
+    border-radius: 10px 10px  0 0;
+    padding-left: 62px;
+    padding-right: 62px;
+    margin: 0%;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+
+#erro{
+    color: red;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica,sans-serif;
+    display: none;
+}
+
+#Success{
+    font-size: large;
+    color: green;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica,sans-serif;
+    display: none;
+}
+
+button{
+    font-size: large;
+    width: 250px;
+    height: 30px;
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#logout{
+    text-decoration: none;
+    color: #123BCC;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #123BCC;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
